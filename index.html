@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Cinta Cantika 💖</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="background"></div>
+<div class="light-overlay"></div>
+<div class="overlay"></div>
+
+<audio id="bgMusic" loop>
+    <source src="raisa.mp3" type="audio/mp3">
+</audio>
+
+<!-- ENVELOPE -->
+<div class="envelope-container" id="envelopeContainer">
+    <div class="envelope" onclick="openEnvelope(this)">
+        <div class="flap"></div>
+    </div>
+</div>
+
+<!-- CARD -->
+<div class="card" id="card">
+
+    <div class="couple-photos">
+        <img src="foto1.jpg">
+        <img src="foto2.jpg">
+    </div>
+
+    <h1>Undangan Buka Bersama</h1>
+
+    <div class="details">
+        Rocca BSD • 14 Maret 2026 • Menjelang Maghrib
+    </div>
+
+    <!-- COUNTDOWN -->
+    <div class="countdown-container">
+        <div class="time-box">
+            <span id="days">0</span>
+            <small>Hari 💕</small>
+        </div>
+        <div class="time-box">
+            <span id="hours">0</span>
+            <small>Jam ⏳</small>
+        </div>
+        <div class="time-box">
+            <span id="minutes">0</span>
+            <small>Menit 🥰</small>
+        </div>
+        <div class="time-box">
+            <span id="seconds">0</span>
+            <small>Detik 💖</small>
+        </div>
+    </div>
+
+    <div id="loveMessage" class="love-message"></div>
+
+    <p>
+                Hi Cinta Cantika, Jujur gue kangen banget ketemu lu ada kali 2 abad yang lalu.
+                semoga lu bisa dateng ya cinskuy!
+    </p>
+
+    <button onclick="alert('Aku tunggu kamu di Rocca BSD 💕')">
+        I’ll Be There 💖
+    </button>
+
+    <!-- MAPS -->
+    <div class="maps-section">
+        <h3>📍 Lokasi Fine Dining</h3>
+
+        <a href="https://www.google.com/maps/place/Rocca+BSD"
+           target="_blank"
+           class="maps-btn">
+           Buka di Google Maps
+        </a>
+
+        <div class="map-frame">
+            <iframe
+                src="https://maps.google.com/maps?q=Rocca%20BSD&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
